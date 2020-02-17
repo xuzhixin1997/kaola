@@ -27,3 +27,19 @@ body {
   *zoom: 1;
 }
 
+/* 三个横线组成的图标 */
+.lineicon{
+  display: inline-block;
+}
+
+.lineicon i{
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 3px;
+}
+
+.lineicon .first{
+  margin-top: 0px;
+}

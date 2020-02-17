@@ -132,7 +132,11 @@
 #header .operation {
   position: relative;
   height: 100px;
-  /* background-color: orange; */
+  background-color: #fff;
+}
+
+#header .operation .wrap{
+  height: 100px;
 }
 
 #header .operation img {
@@ -161,6 +165,7 @@
   border-radius: 40px;
   background-color: #fff;
 }
+
 
 #header .operation .search input {
   height: 24px;
@@ -202,7 +207,8 @@
   position: absolute;
   top: 50%;
   transform:translate(0, -50%);
-  right: 106px;
+  /* right:256px; */
+  margin-left: 850px;
   width: 106px;
   height: 36px;
   line-height: 36px;
@@ -230,3 +236,6 @@
 #header .m-shopcart:hover{
   background-color: #fff4f5;
 }
+
+
+
