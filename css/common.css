@@ -9,12 +9,20 @@ body {
 
 }
 
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53
+}
+
 .wrap {
   width: 1100px;
   margin: 0 auto;
 }
 
-.clear-fix::after{
+.clear-fix::after {
   content: "";
   display: block;
   clear: both;
@@ -23,16 +31,16 @@ body {
 
 }
 
-.clear-fix{
+.clear-fix {
   *zoom: 1;
 }
 
 /* 三个横线组成的图标 */
-.lineicon{
+.lineicon {
   display: inline-block;
 }
 
-.lineicon i{
+.lineicon i {
   display: block;
   width: 15px;
   height: 2px;
@@ -40,6 +48,26 @@ body {
   margin-top: 3px;
 }
 
-.lineicon .first{
+.lineicon .first {
   margin-top: 0px;
+}
+
+.w-hot-title {
+  position: relative;
+  height: 74px;
+  line-height: 32px;
+  padding-top: 25px;
+  border-top: 1px solid #e9e9e9;
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+  /* 告诉浏览器：你想要设置的边框和内边距的
+  值是包含在width内的 */
+  box-sizing: border-box;
+}
+.w-hot-title .big {
+  font-size: 22px;
+  color: #333;
+  font-weight: 700;
+  margin-right: 10px;
 }

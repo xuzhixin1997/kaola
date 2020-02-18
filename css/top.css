@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@font-face{
+  font-family: "xzxfont";
+  src: url("../font/icon-test.svg");
+}
 
 #top .tabbar{
   height: 41px;
@@ -48,6 +52,10 @@
   display: inline;
 }
 
+#top .tabbar .categories li i{
+  position: absolute;
+  background: url("../img/categories-right.png");
+}
 
 #top .tabbar .categories li a{
   display: block;
@@ -70,12 +78,9 @@
   display: none;
 }
 
-#top .tabbar .categories li i{
-  
-  vertical-align: middle;
-  color: #ff96ad;
+#top .tabbar .categories li .font{
+  font-family: "xzxfont"!important;
   font-size: 19px;
-  width: 16px;
 }
 
 
