@@ -16,7 +16,7 @@
   width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
-  vertical-align:middle;
+  vertical-align: middle;
   background-position: center 0;
 }
 
@@ -174,12 +174,12 @@
   margin-top: 10px;
 }
 
-#main .beauty{
+#main .beauty {
   margin-top: 50px;
-  
+
 }
 
-#main .beauty .hot-search{
+#main .beauty .hot-search {
   position: absolute;
   /* bottom: 0; */
   bottom: 14px;
@@ -189,20 +189,372 @@
   /* background-color: red; */
   display: flex;
 }
-#main .beauty .hot-search a{
+
+#main .beauty .hot-search a {
   flex: 1;
 }
-#main .beauty .hot-search .frist{
+
+#main .beauty .hot-search .frist {
   flex: 1.5;
 }
-#main .beauty .hot-search a.active{
+
+#main .beauty .hot-search a.active {
   color: #ff1e3c;
 }
-#main .beauty .hot-search a:hover{
+
+#main .beauty .hot-search a:hover {
   text-decoration: underline;
 }
-#main .beauty .more{
+
+#main .beauty .more {
   position: absolute;
   right: 0;
   bottom: 14px;
+}
+
+#main .beauty .cont {
+  /* background-color: red; */
+  border-top: 1px solid #ccc;
+}
+
+#main .beauty .cont .cont-left {
+  position: relative;
+  float: left;
+  /* background-color: seagreen; */
+  width: 330px;
+  height: 540px;
+
+}
+
+#main .beauty .cont .cont-left .mzlist {
+  position: absolute;
+
+  width: 306px;
+  height: 100px;
+  bottom: 30px;
+  right: 10px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+#main .beauty .cont .cont-left .mzlist .mzlist-item {
+  height: 42px;
+  width: 82px;
+  border-radius: 40px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  text-align: center;
+  line-height: 42px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+}
+
+#main .beauty .cont .cont-left .mzlist a:hover {
+  color: #ff1e32;
+}
+
+#main .beauty .cont .cont-center {
+
+  float: left;
+  /* background-color: orange; */
+  width: 550px;
+  height: 538px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#main .beauty .cont .cont-center .center-list {
+  position: relative;
+  /* background-color: orchid; */
+  width: 274px;
+  height: 270px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  /* flex: 1; */
+}
+
+#main .beauty .cont .cont-center .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+
+#main .beauty .cont .cont-center .title .title-h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 auto;
+
+}
+
+#main .beauty .cont .cont-center .title p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  margin-top: 5px;
+
+}
+
+#main .beauty .cont .cont-center .title img {
+
+  margin-top: 20px;
+}
+
+
+
+
+#main .beauty .cont .cont-right {
+  float: left;
+  width: 219px;
+  height: 540px;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#main .beauty .cont .cont-right .hot {
+  height: 60px;
+  font-size: 16px;
+  /* background-color: aquamarine; */
+  line-height: 50px;
+  color: #333;
+  font-weight: 700;
+  padding: 0 0 0 10px;
+}
+
+#main .beauty .cont .cont-right .list {
+  display: flex;
+  height: 482px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#main .beauty .cont .cont-right .list .list-item {
+  /* background-color: red; */
+  border-top: 1px solid #ccc;
+  flex: 1;
+}
+
+#main .beauty .cont .cont-right .last {
+  border-bottom: 1px solid #ccc;
+}
+
+#main .beauty .cont .cont-right .list .list-item-pic {
+  position: relative;
+  float: left;
+  margin: 20px 7px 0 4px;
+}
+
+#main .beauty .cont-right .til {
+  position: relative;
+  margin-top: 20px;
+
+}
+
+#main .beauty .cont-right .til .tit {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  /** 显示的行数 **/
+  display: -webkit-box;
+  /** 对象作为伸缩盒子模型显示 **/
+
+  -webkit-box-orient: vertical;
+  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  overflow: hidden;
+  /** 隐藏超出的内容 **/
+  color: #666;
+}
+
+#main .beauty .cont-right .til a:hover {
+  text-decoration: underline;
+}
+
+#main .beauty .cont-right .til .price {
+  margin-top: 5px;
+}
+
+#main .beauty .cont-right .til .price .sign1 {
+  font-size: 18px;
+  color: #ff1e32;
+}
+
+#main .beauty .cont-right .til .price strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff1e32;
+  margin-right: 5px;
+}
+
+
+#main .hot-brand {
+  margin-top: 30px;
+
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+#main .hot-brand .tit {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  /* 首行缩进 */
+  text-indent: 20px;
+  line-height: 48px;
+  height: 48px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#main .hot-brand .brand-list {
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#main .hot-brand .brand-list .pic {
+  /* background-color: red; */
+  position: relative;
+  width: 219px;
+  height: 167px;
+  flex: 1;
+  border-right: 1px solid #e9e9e9;
+}
+
+#main .hot-brand .brand-list .pic img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 20px;
+}
+
+#main .hot-brand .brand-list .pic .love {
+  display: none;
+  background: url(../img/yybj.png) no-repeat;
+
+  right: 5px;
+  top: 5px;
+  margin-right: 0;
+  width: 40px;
+  height: 40px;
+  background-position: 50%;
+  position: absolute;
+
+}
+
+#main .hot-brand .brand-list .pic:hover .love {
+  display: block;
+}
+
+#main .guesslove {
+  margin-top: 60px;
+  height: 400px;
+  width: 1100px;
+  /* background-color: yellowgreen; */
+}
+
+#main .guesslove .top {
+  font-weight: 700;
+  height: 38px;
+  line-height: 38px;
+  color: #333;
+  padding: 20px 0 5px;
+  border-bottom: 1px solid #eee;
+}
+
+#main .guesslove .guess {
+  font-size: 22px;
+}
+
+#main .guesslove b {
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+#main .guesslove .content {
+  width: 1120px;
+  height: 382px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+#main .guesslove .content .content-item {
+  width: 260px;
+  height: 382px;
+  /* background-color: orange; */
+  /* flex: 1; */
+}
+
+#main .guesslove .content .content-item img {
+  width: 180px;
+  height: 180px;
+}
+
+#main .guesslove .content .content-image {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #e9e9e9;
+  background-color: #fff;
+  padding: 39px;
+}
+
+#main .guesslove .content .title {
+  display: -webkit-box;
+  padding: 0 30px 0 0;
+  box-sizing: border-box;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  word-wrap: break-word;
+  height: 43px;
+  margin: 7px 0 14px;
+}
+
+#main .guesslove .content .title a {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#main .guesslove .content .price {
+  color: #ff1e32;
+  float: left;
+
+}
+
+#main .guesslove .content .price .sign1,
+strong {
+  font-size: 20px;
+}
+
+#main .guesslove .content .price .oldprice {
+  margin-left: 10px;
+  color: #999;
+}
+
+#main .guesslove .content .rated {
+  margin-top: 10px;
+  float: right;
+
+}
+
+#main .guesslove .content .rated a {
+  color: #999;
+}
+#main .guesslove .content .rated a:hover{
+  text-decoration: underline;
 }
